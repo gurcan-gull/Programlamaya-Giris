@@ -1,0 +1,16 @@
+package bilgisayarkavramlari12;
+import java.util.Scanner;
+public class BilgisayarKavramlari12 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int y=input.nextInt();
+        int x=1,z=1;
+        
+        for(int i=0;i<=y;i++){
+        x=x+z;//burada son iki sayıyı toplayarak yeni sayıyı buluyoruz.
+        z=x-z;//buradaki amacımız ise z'nin bir önceki sayıyı hatırlaması.
+        System.out.print(" "+x);
+        }
+    } 
+}
